@@ -1,10 +1,8 @@
-import { FeedbackButton } from 'components/FeedbackButton/FeedbackButton';
-
-export const Section = ({ title, feedbacks }) => {
+export const Section = ({ title, children }) => {
   return (
     <section className="feedbackForm">
-      <h2 clasName="feedbackFormTitle">{title}</h2>
-      <FeedbackButton feedbacks={feedbacks}></FeedbackButton>
+      <h2 className="feedbackFormTitle">{title}</h2>
+      {children}
     </section>
   );
 };
