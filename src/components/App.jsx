@@ -11,17 +11,13 @@ export class App extends Component {
     bad: 0,
   };
 
-  addFeedback = option => {
+  onLeaveFeedback = e => {
+    const option = e.target.textContent;
     this.setState(prevState => {
       return {
         [option]: prevState[option] + 1,
       };
     });
-  };
-
-  onLeaveFeedback = e => {
-    const option = e.target.textContent;
-    this.addFeedback(option);
   };
 
   getKeys = obj => {
