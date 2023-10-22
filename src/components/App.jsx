@@ -44,19 +44,7 @@ export class App extends Component {
 
   render() {
     return (
-      <div
-        style={{
-          minHeight: '100vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'column',
-          gap: '15px',
-          fontSize: 40,
-          color: '#010101',
-          background: 'linear-gradient(45deg, #49a09d, #5f2c82',
-        }}
-      >
+      <div className="container">
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={this.getKeys(this.state)}

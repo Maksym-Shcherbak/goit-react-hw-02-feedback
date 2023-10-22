@@ -1,7 +1,9 @@
+import css from './Section.module.css';
+
 export const Section = ({ title, children }) => {
   return (
-    <section className="feedbackForm">
-      <h2 className="feedbackFormTitle">{title}</h2>
+    <section className={css.sectionDiv}>
+      <h2 className={css.sectionTitle}>{title}</h2>
       {children}
     </section>
   );

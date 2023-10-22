@@ -1,4 +1,11 @@
 @import-normalize; /* bring in normalize.css styles */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -45,4 +52,15 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  color: #010101;
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
 }
