@@ -1,4 +1,5 @@
 import css from './Statistics.module.css';
+import PropTypes from 'prop-types';
 
 export const Statistics = ({ options, total, positivePercentage }) => {
   return (
@@ -26,4 +27,10 @@ export const Statistics = ({ options, total, positivePercentage }) => {
       </li>
     </ul>
   );
+};
+
+Statistics.propTypes = {
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
+  options: PropTypes.arrayOf(PropTypes.array).isRequired,
 };
